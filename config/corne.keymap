@@ -16,7 +16,7 @@
 
 // Desktop and tab navigation shortcuts
 #define D_NW   LG(LC(D))
-#define D_CL   LG(TAB(DEL))
+#define D_CL   LG(TAB)
 #define D_LT   LC(LG(LEFT))
 #define D_RT   LC(LG(RIGHT))
 #define TAB_RT LC(TAB)
@@ -130,7 +130,7 @@
                         bindings = <
    &kp LA(F4)  &trans  &kp LC(F4)  &kp TAB_LT  &kp TAB_RT  &trans  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp PSCRN  &kp DEL
    &trans  &kp LC(A)  &trans  &kp LS(TAB)  &swapper1  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS  &trans
-   &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp END  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL  &trans
+   &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp END  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL(DEL)  &trans
                            &trans  &trans  &trans  &kp LCTRL  &trans  &kp RGUI
                         >;
                 };
