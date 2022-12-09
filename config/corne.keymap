@@ -124,12 +124,12 @@
 // |ALTF4|     |TB CL|TB LT|TB RT|     ||     | PGU |  Up | PGD | PRT | DEL |
 // |     |     |     |SALTB|ALTTB|     ||  HM |  Lt |  Dn |  Rt | INS |     |
 // |     | UNDO| CUT | COP | PST |     ||  ED |     |DT LT|DT RT|     |     |
-//                   |     |     |     ||     |     | GUI |
+//                   |     |     |     || CTL |     | GUI |
                         bindings = <
    &kp LA(F4)  &trans  &kp LC(F4)  &kp TAB_LT  &kp TAB_RT  &trans  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp PSCRN  &kp DEL
    &trans  &trans  &trans  &kp LS(TAB)  &swapper1  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS  &trans
    &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp END  &trans  &kp D_LT  &kp D_RT  &trans  &trans
-                           &trans  &trans  &trans  &trans  &trans  &kp RGUI
+                           &trans  &trans  &trans  &kp LCTRL  &trans  &kp RGUI
                         >;
                 };
                 
