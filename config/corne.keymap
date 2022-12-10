@@ -23,6 +23,8 @@
 #define D_RT   LC(LG(RIGHT))
 #define TAB_RT LC(TAB)
 #define TAB_LT LC(LS(TAB))
+#define TAB_NW LC(T)
+#define TAB_CL LC(F4)
 
 // Key position groups
 #define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29
@@ -125,12 +127,12 @@
                 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |ALTF4|     |TB CL|TB LT|TB RT|     ||     | PGU |  Up | PGD | PRT | DEL |
+// |ALTF4|     |TB CL|TB LT|TB RT|TB NW||     | PGU |  Up | PGD | PRT | DEL |
 // |     | ALL |     |SALTB|ALTTB|     ||  HM |  Lt |  Dn |  Rt | INS |     |
 // |     | UNDO| CUT | COP | PST |     ||  ED |DT NW|DT LT|DT RT|DT CL|     |
 //                   |     |     |     || CTL |     | GUI |
                         bindings = <
-   &kp LA(F4)  &trans  &kp LC(F4)  &kp TAB_LT  &kp TAB_RT  &trans  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp PSCRN  &kp DEL
+   &kp LA(F4)  &trans  &kp TAB_CL &kp TAB_LT  &kp TAB_RT  &kp TAB_NW  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp PSCRN  &kp DEL
    &trans  &kp LC(A)  &trans  &kp LS(TAB)  &swapper1  &trans  &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS  &trans
    &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp END  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL  &trans
                            &trans  &trans  &trans  &kp LCTRL  &trans  &kp RGUI
