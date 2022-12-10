@@ -103,7 +103,7 @@
                         bindings = <
    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0 &kp BSPC
    &trans &trans   &trans &trans   &trans   &trans   &kp MINUS &kp PLUS &kp LBKT  &kp RBKT &kp BSLH &tog NUM
-   &tog 6 &trans   &trans &trans   &trans   &trans   &kp UNDER &kp EQUAL  &kp LBRC  &kp RBRC &kp PIPE &trans
+   &tog COLEMAK &trans   &trans &trans   &trans   &trans   &kp UNDER &kp EQUAL  &kp LBRC  &kp RBRC &kp PIPE &trans
                     	     &trans &trans &trans &trans &trans &trans
                         >;
                 };
