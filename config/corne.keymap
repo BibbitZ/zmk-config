@@ -149,8 +149,8 @@
 //                   |     |     |     || CTL |     | GUI |
                         bindings = <
    &kp LA(F4)  &trans  &kp TAB_CL &kp TAB_LT  &kp TAB_RT  &kp TAB_NW  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp PSCRN  &kp DEL
-   &trans  &kp LC(A)  &trans  &kp LS(TAB)  &swapper1  &trans  &kp homhist  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS  &trans
-   &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp endnew  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL  &trans
+   &trans  &kp LC(A)  &trans  &kp LS(TAB)  &swapper1  &trans  &homhist  &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS  &trans
+   &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &endnew  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL  &trans
                            &trans  &trans  &trans  &kp LCTRL  &trans  &kp RGUI
                         >;
                 };
