@@ -115,7 +115,7 @@
 // -----------------------------------------------------------------------------------------
 // |       |  1  |  2  |  3  |  4  |  5  ||  6  |  7  |  8  |  9  |  0  | BKSP |
 // |       |     |     |     |     |     ||  -  |  +  |  [  |  ]  |  \  |  NUM |
-// |   |     |     |     |     |     ||  _  |  =  |  {  |  }  | "|" |      |
+// |       |     |     |     |     |     ||  _  |  =  |  {  |  }  | "|" |      |
 //                     |     |     |     ||     |     |     |
                         bindings = <
    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0 &kp BSPC
@@ -129,12 +129,12 @@
 // -----------------------------------------------------------------------------------------
 // |ALTF4|     |TB CL|TB LT|TB RT|TB NW||     | PGU |  Up | PGD | PRT | DEL |
 // |     | ALL |     |SALTB|ALTTB|     ||  HM |  Lt |  Dn |  Rt | INS |     |
-// |WIN+P| UNDO| CUT | COP | PST |     ||  ED |DT NW|DT LT|DT RT|DT CL|     |
+// |     | UNDO| CUT | COP | PST |     ||  ED |DT NW|DT LT|DT RT|DT CL|     |
 //                   |     |     |     || CTL |     | GUI |
                         bindings = <
    &kp LA(F4)  &trans  &kp TAB_CL &kp TAB_LT  &kp TAB_RT  &kp TAB_NW  &trans  &kp PG_UP  &kp UP  &kp PG_DN  &kp PSCRN  &kp DEL
    &trans  &kp LC(A)  &trans  &kp LS(TAB)  &swapper1  &trans &kp HOME   &kp LEFT  &kp DOWN  &kp RIGHT  &kp INS  &trans
-   &kp LGUI(P)  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp END  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL  &trans
+   &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &kp END  &kp D_NW  &kp D_LT  &kp D_RT  &kp D_CL  &trans
                            &trans  &trans  &trans  &kp LCTRL  &trans  &kp RGUI
                         >;
                 };
