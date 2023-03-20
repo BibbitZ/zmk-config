@@ -9,11 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 #define QWERTY  0
 #define COLEMAK 1
-#define LOWER   2
-#define RAISE   3 
-#define NAV     4 
-#define NUM     5
-#define ADJ     6
+#define GAME    2
+#define LOWER   3
+#define RAISE   4 
+#define NAV     5 
+#define NUM     6
+#define ADJ     7
 
 
 // Desktop and tab navigation shortcuts
@@ -79,7 +80,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LALT ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &td0  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
-                  &mt LCTRL LGUI &mo 2 &lt 4 SPACE   &kp SPACE &mo 3 &mt RGUI RALT
+                  &mt LCTRL LGUI &mo 3 &lt 5 SPACE   &kp SPACE &mo 4 &mt RGUI RALT
                         >;
                 };
                 
@@ -93,7 +94,7 @@
    &kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMI  &kp BSPC
    &mt LALT ESC  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp SQT
    &td0     &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH  &mt RSHFT RET
-                        &mt LCTRL LGUI &mo 2 &lt 4 SPACE   &kp SPACE &mo 3 &mt RGUI RALT
+                        &mt LCTRL LGUI &mo 3 &lt 5 SPACE   &kp SPACE &mo 4 &mt RGUI RALT
                         >;
                 };
                 
@@ -107,7 +108,7 @@
    &kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMI  &kp BSPC
    &mt LALT ESC  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp SQT
    &kp LSHFT &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH  &mt RSHFT RET
-                        &mt LCTRL LGUI &mo 2 &kp SPACE &kp SPACE &mo 3 &mt RGUI RALT
+                        &mt LCTRL LGUI &mo 3 &kp SPACE &kp SPACE &mo 4 &mt RGUI RALT
                         >;
                 };
                 
@@ -170,13 +171,13 @@
                 adj_layer {
 // -----------------------------------------------------------------------------------------
 // |     |     |     |     |RESET|     ||     | V-  | MUT | V+  |     |QWERTY|
-// |BTCLR| BT0 | BT1 | BT2 |     |     ||     | PRE |PL/PS| NXT |     |     |
+// |BTCLR| BT0 | BT1 | BT2 |     |     ||     | PRE |PL/PS| NXT |     |GAME|
 // |     |     |     |     |     |     ||     |     |     |     |     |COLEMAK|
 //                   |     |     |     ||     |     |     |
                         bindings = <
-   &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &trans  &to 1
-   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans  &trans
-   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 3
+   &trans  &trans  &trans  &trans  &bootloader  &trans  &trans  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &trans  &to 0
+   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans  &to 2
+   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 1
                            &trans  &trans  &trans  &trans  &trans  &trans
                         >;
                 };
