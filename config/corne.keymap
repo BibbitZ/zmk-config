@@ -87,12 +87,12 @@
                 colemak_layer {
 // -----------------------------------------------------------------------------------------
 // |   TAB  |  Q  |  W  |  F  |  P  |  B  ||  J  |  L  |  U  |  Y  |  ;  | BKSP |
-// |ALT/ESC |  A  |  R  |  S  |  T  |  G  ||  M  |  N  |  E  |  I  |  O  |  '   |
+// |   ESC  |  A  |  R  |  S  |  T  |  G  ||  M  |  N  |  E  |  I  |  O  |  '   |
 // |SHFT/CAP|  Z  |  X  |  C  |  D  |  V  ||  K  |  H  |  ,  |  .  |  /  |SHFT/ENT|
 //                    | GUI | LWR |NAV/SPC|| SPC | RSE | ALT |
                         bindings = <
    &kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMI  &kp BSPC
-   &mt LALT ESC  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp SQT
+   &kp ESC  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &kp SQT
    &td0     &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH  &mt RSHFT RET
                         &mt LCTRL LGUI &mo 3 &lt 5 SPACE   &kp SPACE &mo 4 &mt RGUI RALT
                         >;
