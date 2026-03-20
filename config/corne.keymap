@@ -111,6 +111,7 @@
                 };
 				
 				adj_layer {
+                        display-name = "Adjust Layer";
 // -----------------------------------------------------------------------------------------
 // |     |     |     |     |RESET|     ||     | V-  | MUT | V+  |     |QWERTY|
 // |BTCLR| BT0 | BT1 | BT2 |     |     ||     | PRE |PL/PS| NXT |     |      |
