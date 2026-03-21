@@ -38,7 +38,14 @@
         };
     };
 
-	behaviors {        
+	behaviors {
+		td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&caps_word>;
+        };
+
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -61,17 +68,18 @@
                 default_layer {
                         display-name = "Default Layer";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |SHFT/ENT|
-//                    | GUI | LWR | NAV |   | SPC | RSE  | ALT |
+// |   TAB  |  Q  |  W  |  E  |  R  |  T  ||  Y  |  U   |  I  |  O  |  P  | BKSP |
+// |ALT/ESC |  A  |  S  |  D  |  F  |  G  ||  H  |  J   |  K  |  L  |  ;  |  '   |
+// |SHFT/CAP|  Z  |  X  |  C  |  V  |  B  ||  N  |  M   |  ,  |  .  |  /  |SHFT/ENT|
+//                   | GUI | LWR |NAV/SPC|| SPC | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT ENTER
-                  &mt LCTRL LGUI &mo 1 &mo 3 &kp SPACE  &mo 2 &kp RALT
+   &mt LALT ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &td0  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
+                  &mt LCTRL LGUI &mo 3 &lt 5 SPACE   &kp SPACE &mo 4 &mt RGUI RALT
                         >;
                 };
+
                 lower_layer {
                         display-name = "Lower Layer";
 // -----------------------------------------------------------------------------------------
