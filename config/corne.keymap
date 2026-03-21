@@ -39,12 +39,12 @@
     };
 
 	behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHFT>, <&caps_word>;
-        };
+        //td0: tap_dance_0 {
+        //   compatible = "zmk,behavior-tap-dance";
+        //    #binding-cells = <0>;
+        //    tapping-term-ms = <200>;
+        //    bindings = <&kp LSHFT>, <&caps_word>;
+        //};
         
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -60,6 +60,13 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <15>;
         };
+
+		// Caps word triggeer
+		caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            shift-key-activation = <2>;
+        };
+
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -74,7 +81,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &mt LSHFT caps_word &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
                   &mt LCTRL LGUI &mo 1 &mo 3 &kp SPACE  &mo 2 &kp RALT
                         >;
                 };
