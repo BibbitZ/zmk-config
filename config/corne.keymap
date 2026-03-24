@@ -76,7 +76,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &mt LALT ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &td0  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
-                  &mt LCTRL LGUI &mo 3 &lt 5 SPACE   &kp SPACE &mo 4 &mt RGUI RALT
+                  &mt LCTRL LGUI &mo 1 &lt 3 SPACE   &kp SPACE &mo 2 &mt RGUI RALT
                         >;
                 };
 
@@ -100,12 +100,12 @@
 // -----------------------------------------------------------------------------------------
 // |       |  1  |  2  |  3  |  4  |  5  ||  6  |  7  |  8  |  9  |  0  | BKSP |
 // |       |     |     |     |     |     ||     |  -  |  +  |  [  |  ]  |  \   |
-// |       |     |     |     |     |     ||     |     |     |     |     |  NUM |
+// |       |     |     |     |     |     ||     |UNLK |     |     |     |  NUM |
 //                     |     |     |     ||     |     |     |
                         bindings = <
    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0 &kp BSPC
    &trans &trans   &trans &trans   &trans   &trans   &trans &kp MINUS &kp PLUS &kp LBKT  &kp RBKT &kp BSLH
-   &trans &trans   &trans &trans   &trans   &trans   &trans &trans &trans &trans &trans &tog NUM
+   &trans &trans   &trans &trans   &trans   &trans   &trans &studio_unlock &trans &trans &trans &tog NUM
                     	     &trans &trans &trans &trans &trans &trans
                         >;
                 };
