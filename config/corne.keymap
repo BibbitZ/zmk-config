@@ -39,13 +39,13 @@
     };
 
 	behaviors {
-		td0: tap_dance_0 {
+        td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&caps_word>;
         };
-
+        
         td1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -60,7 +60,6 @@
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
             ignored-key-positions = <15>;
         };
-
     };
         keymap {
                 compatible = "zmk,keymap";
@@ -68,18 +67,17 @@
                 default_layer {
                         display-name = "Default Layer";
 // -----------------------------------------------------------------------------------------
-// |   TAB  |  Q  |  W  |  E  |  R  |  T  ||  Y  |  U   |  I  |  O  |  P  | BKSP |
-// |ALT/ESC |  A  |  S  |  D  |  F  |  G  ||  H  |  J   |  K  |  L  |  ;  |  '   |
-// |SHFT/CAP|  Z  |  X  |  C  |  V  |  B  ||  N  |  M   |  ,  |  .  |  /  |SHFT/ENT|
-//                   | GUI | LWR |NAV/SPC|| SPC | RSE  | ALT |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// |  ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |SHFT/ENT|
+//                    | GUI | LWR | NAV |   | SPC | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &mt LALT ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &td0  &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
-                  &mt LCTRL LGUI &mo 1 &lt 3 SPACE   &kp SPACE &mo 2 &mt RGUI RALT
+   &kp ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &mt LSHFT caps_word &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT RET
+                  &mt LCTRL LGUI &mo 1 &mo 3 &kp SPACE  &mo 2 &kp RALT
                         >;
                 };
-
                 lower_layer {
                         display-name = "Lower Layer";
 // -----------------------------------------------------------------------------------------
@@ -100,12 +98,12 @@
 // -----------------------------------------------------------------------------------------
 // |       |  1  |  2  |  3  |  4  |  5  ||  6  |  7  |  8  |  9  |  0  | BKSP |
 // |       |     |     |     |     |     ||     |  -  |  +  |  [  |  ]  |  \   |
-// |       |     |     |     |     |     ||     |UNLK |     |     |     |  NUM |
+// |       |     |     |     |     |     ||     |     |     |     |     |  NUM |
 //                     |     |     |     ||     |     |     |
                         bindings = <
    &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0 &kp BSPC
    &trans &trans   &trans &trans   &trans   &trans   &trans &kp MINUS &kp PLUS &kp LBKT  &kp RBKT &kp BSLH
-   &trans &trans   &trans &trans   &trans   &trans   &trans &studio_unlock &trans &trans &trans &tog NUM
+   &trans &trans   &trans &trans   &trans   &trans   &trans &trans &trans &trans &trans &tog NUM
                     	     &trans &trans &trans &trans &trans &trans
                         >;
                 };
